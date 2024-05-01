@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h1 class="topText">Place Your Order</h1>
+        <section></section>
+        <section class="menu-section">
+          <h2>Appetizers</h2>
+          <div class="carousel" id="appetizers-carousel"></div>
+        </section>
+        <section class="menu-section">
+          <h2>Entrees</h2>
+          <div class="carousel" id="entrees-carousel"></div>
+        </section>
+        <section class="menu-section">
+          <h2>Desserts</h2>
+          <div class="carousel" id="desserts-carousel"></div>
+        </section>
+        <section class="menu-section">
+          <h2>Drinks</h2>
+          <div class="carousel" id="drinks-carousel"></div>
+        </section>
+      </div>
+      <div class="orderInfo">
+        <div class="totalBillContainer">
+          <p class="totalLabel">Total Bill:</p>
+          <p class="totalBill" id="totalBill"></p>
+        </div>
+        <button onclick="emptyTray()" class="emptyBtn" id="emptyBtn">
+          Empty Tray
+        </button>
+        <div class="itemsContainer">
+          <p class="itemsLabel">Tray Items:</p>
+          <ul class="items" id="items"></ul>
+        </div>
+        <div class="placeOrderContainer">
+          <button class="orderBtn" id="orderBtn">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
